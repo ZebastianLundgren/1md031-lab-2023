@@ -1,154 +1,135 @@
 <!DOCTYPE HTML>
 <html lang="en">
-   <head>
-      <title>Burgershop</title>
-      <meta charset="utf-8"/>
-      <style>
-         body{
-         background-color: gray;
-         }
-         h1 {color:red, forestgreen;
-         font-family: Verdana, Geneva;
-         font-size: 200%;
-         }
-         p  {color:black;
-         font-family: Verdana, Geneva, Tahoma, sans-serif;
-         font-size: small;
-         }
-         div{display : inline-block;
+
+<head>
+   <link rel="stylesheet" type="text/css" href="CSS/style.css">
+   <title>Burgershop</title>
+   <meta charset="utf-8" />
+   <style>
+      div {
+         display: inline-block;
          align-items: center;
-         }
-         figcaption{font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      figcaption {
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
          font-size: larger;
          align-content: center;
          margin: 5%;
-         }
-         figure{align-items: center;
-         }
-         label{font-size: large;
+      }
+
+      figure {
+         align-items: center;
+      }
+
+      label {
+         font-size: large;
          font-family: Verdana, Geneva, Tahoma, sans-serif;
-         }
-      </style>
-   </head>
-   <body>
-      <header>
-         <h1>Welcome to Zebbe's Burgerz!</h1>
-         <p>Order burgers straight to your door!
-         <p>
-      </header>
-      <main>
-         <section>
-            <h2>Select your burger</h2>
-            <div>
+      }
+   </style>
+</head>
+
+<body>
+   <header>
+      <h1>Welcome to Zebbe's Burgerz!</h1>
+      <p>Order burgers straight to your door!
+      <p>
+   </header>
+   <main>
+      <section id="section1">
+         <h2>Select your burger</h2>
+         <div class="wrapper">
+            <div class="box a">
                <figure>
                   <figcaption>Cheeseburger</figcaption>
                   <img src="img/nedladdning.jpg" alt="Cheeseburger" width="200" height="200">
-                </figure>
-                <ul>
-                    <li>A juicy burger with loads of cheese!</li>
-                    <li>29$</li>
-                </ul>
+               </figure>
+               <ul>
+                  <section class="information">
+                     <li>A juicy burger with loads of cheese and <span id="allergies">lactose</span>!</li>
+                     <li>29$</li>
+                  </section>
+               </ul>
             </div>
-            <div>
+            <div class="box b">
                <figure>
                   <figcaption>Halloumiburger</figcaption>
                   <img src="img/nedladdning.jpg" alt="Cheeseburger" width="200" height="200">
                </figure>
                <ul>
-                  <li>A veggieburger</li>
-                  <li>29$</li>
+                  <section class="information">
+                     <li>A veggieburger with <span id="allergies">gluten</span> and avocado</li>
+                     <li>29$</li>
+                  </section>
                </ul>
             </div>
-            <div>
+
+            <div class="box c">
                <figure>
                   <figcaption>Chickenburger</figcaption>
                   <img src="img/nedladdning.jpg" alt="Chickenburger" width="200" height="200">
                </figure>
                <ul>
-                  <li>A juicy burger for the chickenlovers!</li>
-                  <li>29$</li>
+                  <section class="information">
+                     <li>A hot'n crispy chickenburger with avocado</li>
+                     <li>29$</li>
+                  </section>
                </ul>
             </div>
-            <h2>Select your sides</h2>
-            <div>
-                <figure>
-                   <figcaption>Potato Fries</figcaption>
-                   <img src="img/nedladdning(1).jpg" alt="Potato Fries" width="200" height="200">
-                 </figure>
-                 <ul>"
-                     <li>Crispy potato Fries!</li>
-                     <li>19$</li>
-                 </ul>
-             </div>
-             <div>
-                <figure>
-                   <figcaption>Sweetpotato Fries</figcaption>
-                   <img src="img/nedladdning(1).jpg" alt="Sweetpotato Fries" width="200" height="200">
-                 </figure>
-                 <ul>
-                     <li>Crispy sweet potato Fries!</li>
-                     <li>19$</li>
-                 </ul>
-             </div>
-             <div>
-                <figure>
-                   <figcaption>Chips</figcaption>
-                   <img src="img/nedladdning(1).jpg" alt="Chips" width="200" height="200">
-                 </figure>
-                 <ul>
-                     <li>Our crispiest option!</li>
-                     <li>19$</li>
-                 </ul>
-             </div>
-         </section>
-         <section>
-            <h2>Delivery information</h2>
-            <p>
-               <label for="Fullname">Full name</label><br>
-               <input type="text" id="first- and lastname" name="fln" required="required" placeholder="First- and lastname">
-            </p>
-            <p>
-               <label for="Email">E-Mail</label><br>
-               <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
-            </p>
-            <p>
-               <label for="Streetname">Street</label><br>
-               <input type="text" id="Street" name="sn" required="required" placeholder="Streetname">
-            </p>
-            <p>
-               <label for="Housenumber">House</label><br>
-               <input type="number" id="Housenumber" name="hn" required="required" placeholder="Housenumber">
-            </p>
-            <p>
-               <label for="Payment options">Payment options</label>
-               <br>
-               <select id="recipient" name="rcp">
-                  <option>Cash</option>
-                  checked="checked"
-                  <option>Card</option>
-                  <option>Swish</option>
-                  <option>Pay later</option>
-               </select>
-            </p>
-            <form>
-               <h3>Specify your gender:</h3>
-               <label>
-               <input type="radio" name="gender" value="male" checked="checked"> Male
-               </label>
-               <label>
-               <input type="radio" name="gender" value="female"> Female
-               </label>
-               <label>
-               <input type="radio" name="gender" value="other"> Other
-               </label>
-            </form>
-         </section>
-         <input type="submit" value="Place order!">
-      </main>
-      <hr>
-      <footer>
-         <p>Zebbe's Burgerz Inc
+         </div>
+      </section>
+      <section id="section2">
+         <h2>Delivery information</h2>
          <p>
-      </footer>
-   </body>
+            <label for="Fullname">Full name</label><br>
+            <input type="text" id="first- and lastname" name="fln" required="required"
+               placeholder="First- and lastname">
+         </p>
+         <p>
+            <label for="Email">E-Mail</label><br>
+            <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
+         </p>
+         <p>
+            <label for="Streetname">Street</label><br>
+            <input type="text" id="Street" name="sn" required="required" placeholder="Streetname">
+         </p>
+         <p>
+            <label for="Housenumber">House</label><br>
+            <input type="number" id="Housenumber" name="hn" required="required" placeholder="Housenumber">
+         </p>
+         <p>
+            <label for="Payment options">Payment options</label>
+            <br>
+            <select id="recipient" name="rcp">
+               <option>Cash</option>
+               checked="checked"
+               <option>Card</option>
+               <option>Swish</option>
+               <option>Pay later</option>
+            </select>
+         </p>
+         <form>
+            <h3>Specify your gender:</h3>
+            <label>
+               <input type="radio" name="gender" value="male" checked="checked"> Male
+            </label>
+            <label>
+               <input type="radio" name="gender" value="female"> Female
+            </label>
+            <label>
+               <input type="radio" name="gender" value="other"> Other
+            </label>
+         </form>
+         <button type="submit">
+            Place order </button>
+      </section>
+   </main>
+   <hr>
+   <footer>
+      <p>Zebbe's Burgerz Inc - ALL RIGHT RESERVED - For more information check out my instagram @zebastian_lundgren or
+         my Tinder ;)
+      <p>
+   </footer>
+</body>
+
 </html>
