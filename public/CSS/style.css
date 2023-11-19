@@ -3,7 +3,6 @@ body {
     font-size: 12pt;
     background-image: url(../img/pattern.png);
     background-size: 10%;
-    background-attachment: local;
 }
 
 .information {
@@ -25,10 +24,6 @@ body {
     border-top: 10px dotted rgb(177, 49, 171);
     background-color: black;
     border: 10px double black;
-}
-
-button:hover {
-    color: #ff5500;
 }
 
 header {
@@ -65,8 +60,8 @@ footer {
 
 .wrapper {
     display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3px;
+    grid-template-columns: repeat(4, 2fr);
 }
 
 .box {

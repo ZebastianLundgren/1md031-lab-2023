@@ -1,0 +1,23 @@
+[
+    {
+      "name": "Cheeseburger",
+      "kCal": "850 calories",
+      "la": "Lactose-free",
+      "gl": "Gluten-free",
+      "url": "img/nedladdning.jpg" 
+    },
+    {
+        "name": "Halloumiburger",
+      "kCal": "850 calories",
+      "la": "Lactose-free",
+      "gl": "Gluten-free",
+      "url": "img/Halloumiburger1.jpg" 
+      },
+      {
+        "name": "Chickenburger",
+        "kCal": "850 calories",
+        "la": "Contains lactose",
+        "gl": "Gluten-free",
+        "url": "img/chickenburger.jpg" 
+      }
+  ]
